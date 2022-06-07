@@ -33,6 +33,9 @@ jobs:
 #       - name: typings
 #         run: npm install -g @ionic/app-scripts
         
+      - name: Remove Android platform
+        run: ionic cordova platform rm android
+
       - name: Add Android platform
         run: ionic cordova platform add android@latest
 
